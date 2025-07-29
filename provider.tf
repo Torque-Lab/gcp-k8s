@@ -11,6 +11,5 @@ terraform {
 provider "google" {
   project = "sitewach-386205"
   region  = "us-central1"
-  alias   = "gcp"
   credentials = file("~/.config/gcloud/application_default_credentials.json")
 }

@@ -6,13 +6,13 @@ variable "project" {
 variable "region" {
   type        = string
   description = "Region"
-  default     = "us-central1"
+  default     = "us-central1" 
 }
 
 variable "zone" {
   type        = list(string)
   description = "Zone"
-  default     = ["us-central1-c"]
+  default     = ["us-central1-a"]
 }
 
 variable "cluster_name" {

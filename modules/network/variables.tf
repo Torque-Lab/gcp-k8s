@@ -22,6 +22,6 @@ variable "cidr" {
 variable "region" {
   type        = string
   description = "Region"
-  default     = "us-central1"
+  default     = "us-central1-a"
 }
 

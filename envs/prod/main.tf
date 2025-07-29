@@ -10,15 +10,14 @@ module "network" {
 module "gke" {
   source         = "../../modules/gke"
   cluster_name   = "prod-k8s-cluster"
-  region         = "us-central1"
-  zone           = ["us-central1"]
+  zone           = ["us-central1-a"]
   node_count     = 1
   machine_type   = "e2-medium"
   min_node_count = 1
   max_node_count = 2
   network        = module.network.network
   subnet         = module.network.subnet
-  node_pool_name = "prod-nodes"
+  node_pool_name = "prod-nodes" 
   project = "sitewach-386205"
   disk_size_gb = 20
 

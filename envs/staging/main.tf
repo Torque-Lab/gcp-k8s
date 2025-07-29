@@ -10,8 +10,7 @@ module "network" {
 module "gke" {
   source         = "../../modules/gke"
   cluster_name   = "staging-cluster"
-  region         = "us-central1"
-  zone           = ["us-central1"]
+  zone           = ["us-central1-a"]
   node_count     = 1
   machine_type   = "e2-medium"
   min_node_count = 1
